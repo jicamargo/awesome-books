@@ -14,7 +14,6 @@
   border: 1px black solid;
 }
 
-
 .title {
   font-weight: bold;
   text-align: center;
@@ -32,7 +31,6 @@
   width: 70px;
   height: 20px;
 }
-
 
 .whiteBackground {
   background-color: white;
@@ -56,10 +54,10 @@
 }
 
 #addButton {
-  align-self:flex-end;
+  align-self: flex-end;
   margin-left: 10px;
 }
-  
+
 .button {
-  box-shadow:  5px 5px 5px #292424;
+  box-shadow: 5px 5px 5px #292424;
 }
