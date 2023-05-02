@@ -1,3 +1,63 @@
 * {
   box-sizing: border-box;
 }
+
+.books {
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+}
+
+#booklist {
+  /* padding: 16px; */
+  margin: 16px;
+  border: 1px black solid;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.bookinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  padding: 0 16px;
+}
+
+.removebtn {
+  width: 70px;
+  height: 20px;
+}
+
+.whiteBackground {
+  background-color: white;
+}
+
+.grayBackground {
+  background-color: lightgray;
+}
+
+.newbookform {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  border-top: 2px black solid;
+  width: 300px;
+  text-align: center;
+}
+
+.inputfld {
+  width: 100%;
+}
+
+#addButton {
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+.button {
+  box-shadow: 5px 5px 5px #292424;
+}
