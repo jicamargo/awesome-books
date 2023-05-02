@@ -1,4 +1,4 @@
-/*********** If there is info -> query it, unless create and empty array ************** */
+/** ********* If there is info -> query it, unless create and empty array ************** */
 const bookArray = JSON.parse(localStorage.getItem('bookArray')) || [];
 
 function SaveToLocalStorage() {
@@ -28,16 +28,16 @@ function ShowBookList() {
       bookArray.splice(index, 1);
       SaveToLocalStorage();
     });
-    
+
     div.appendChild(removeBtn);
-    
+
     const hr = document.createElement('hr');
     div.appendChild(hr);
   });
 }
 
 function addBook(author, title) {
-  bookArray.push({author, title});
+  bookArray.push({ author, title });
   SaveToLocalStorage();
   ShowBookList();
 }
