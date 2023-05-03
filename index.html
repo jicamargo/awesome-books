@@ -8,58 +8,66 @@
     <title>Awesome books</title>
 </head>
 <body>
-    <div class="header">
-      <nav class="navbar">
-        <div class="logo">
-          Awsome books
-        </div>
-        <nav>
-          <ul class="menu">
-            <li id="list-menu"><a href="#">List</a></li>
-            <li id="add-new-menu"><a href="#">Add new</a></li>
-            <li id="contact-menu"><a href="#">Contact</a></li>
-          </ul>
-        </nav>  
-      </nav> 
-      <div class="date">
-        <span id="currentDateTime"></span>
+  <div class="header">
+    <nav class="navbar">
+      <div class="logo">
+        Awsome books
       </div>
+      <nav>
+        <ul class="menu">
+          <li id="list-menu"><a href="#">List</a></li>
+          <li id="add-new-menu"><a href="#">Add new</a></li>
+          <li id="contact-menu"><a href="#">Contact</a></li>
+        </ul>
+      </nav>  
+    </nav> 
+    <div class="date">
+      <span id="currentDateTime"></span>
     </div>
+  </div>
 
-    <main>
-      <section class="books" id="list-section">
-        <h1 class ="title">All awesome books</h1>
-        <section id="booklist"></section>
-      </section>
-      <section class="addNewBook" id="add-new-section">
-        <div class="newbookform">
-          <h1 class="title">
-            Add a new book
-          </h1>
-          <div>
-            <label for="title" hidden>Title</label>
-            <input class="inputfld" type="text" id="title" placeholder="Title" required>
-          </div>
-          <br>
-          <div>
-            <label for="author" hidden>Author</label>
-            <input class="inputfld" type="text" id="author" placeholder="Author" required>
-          </div>
-          <br>
-          <button class="button" type="button" id="addButton">Add Book</button>
-        </div>
-      </section>
-      <section class="contact-section" id="contact-section">
-        <h1>
-          contac me
+  <main>
+    <section class="books" id="list-section">
+      <h1 class ="title">All awesome books</h1>
+      <section id="booklist"></section>
+    </section>
+    <section class="addNewBook" id="add-new-section">
+      <div class="newbookform">
+        <h1 class="title">
+          Add a new book
         </h1>
-      </section>
-      <footer>
-        <p>&copy; 2023 JIC. All right reserved.</p>
-      </footer>
-      
-    </main>
+        <div>
+          <label for="title" hidden>Title</label>
+          <input class="inputfld" type="text" id="title" placeholder="Title" required>
+        </div>
+        <br>
+        <div>
+          <label for="author" hidden>Author</label>
+          <input class="inputfld" type="text" id="author" placeholder="Author" required>
+        </div>
+        <br>
+        <button class="button" type="button" id="addButton">Add Book</button>
+      </div>
+    </section>
+    <section class="contact-section" id="contact-section">
+      <div class="contact">
+        <h1 class="title">
+          Contact information
+        </h1>
+        <div>
+          <p>Do have any question or you just want to say "hello"?<br>You can reach out to us!</p>
+          <ul>
+            <li>Our e-mail: booklist@gmail.com</li>
+            <li>Our phone number: 001 14541644</li>
+            <li>Our addreas: St. book 33, 33452 NY, USA</li>
+          </ul>
+        </div>
+    </section>
+    <footer>
+      <p>&copy; 2023 JIC. All right reserved.</p>
+    </footer>  
+  </main>
 
-    <script src="./js/addremove.js"></script>
+  <script src="./js/addremove.js"></script>
 </body>
 </html>

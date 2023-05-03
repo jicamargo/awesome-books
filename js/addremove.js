@@ -58,14 +58,16 @@ booklist.ShowBookList();
 
 function updateDateTime() {
   const currentDateTime = new Date();
-  const dateTimeOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+  const dateTimeOptions = {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric',
+  };
   document.getElementById('currentDateTime').textContent = currentDateTime.toLocaleDateString('en-US', dateTimeOptions);
 }
 
 updateDateTime();
 setInterval(updateDateTime, 1000);
 
-// functios to display the add new section 
+// functios to display the add new section
 
 const listMenu = document.getElementById('list-menu');
 const addNewMenu = document.getElementById('add-new-menu');
@@ -75,7 +77,13 @@ const listSection = document.getElementById('list-section');
 const addNewSection = document.getElementById('add-new-section');
 const contactSection = document.getElementById('contact-section');
 
-listMenu.addEventListener('click', function() {
+function hideAllSections() {
+  listSection.style.display = 'none';
+  addNewSection.style.display = 'none';
+  contactSection.style.display = 'none';
+}
+
+listMenu.addEventListener('click', () => {
   hideAllSections();
   listSection.style.display = 'block';
   listMenu.classList.add('active-menu');
@@ -83,7 +91,7 @@ listMenu.addEventListener('click', function() {
   contactMenu.classList.remove('active-menu');
 });
 
-addNewMenu.addEventListener('click', function() {
+addNewMenu.addEventListener('click', () => {
   hideAllSections();
   addNewSection.style.display = 'block';
   addNewMenu.classList.add('active-menu');
@@ -91,7 +99,7 @@ addNewMenu.addEventListener('click', function() {
   contactMenu.classList.remove('active-menu');
 });
 
-contactMenu.addEventListener('click', function() {
+contactMenu.addEventListener('click', () => {
   hideAllSections();
   contactSection.style.display = 'block';
   contactMenu.classList.add('active-menu');
@@ -99,18 +107,12 @@ contactMenu.addEventListener('click', function() {
   addNewMenu.classList.remove('active-menu');
 });
 
-function hideAllSections() {
-  listSection.style.display = 'none';
-  addNewSection.style.display = 'none';
-  contactSection.style.display = 'none';
-}
-
 function init() {
-  hideAllSections(); 
-  listSection.style.display = 'block'
+  hideAllSections();
+  listSection.style.display = 'block';
   listSection.style.display = 'block';
   listMenu.classList.add('active-menu');
 }
 
-// load the page with the first page active 
+// load the page with the first page active
 init();

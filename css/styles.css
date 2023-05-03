@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
-  border: 1px black solid ;
+  border: 1px black solid;
   background-color: #f2f2f2;
   font-size: 16px;
   font-weight: bold;
@@ -39,7 +39,7 @@
 .menu {
   display: flex;
   list-style: none;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin: 0;
 }
 
@@ -54,6 +54,16 @@ nav a {
   font-size: 16px;
   font-weight: bold;
 }
+
+.active-menu {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.active-menu a {
+  color: #fff;
+}
+
 nav li:hover {
   background-color: #878686;
   border-radius: 4px;
@@ -70,7 +80,9 @@ main {
   margin-top: 70px; /* ajusta este valor según sea necesario */
 }
 
-#list-section, #add-new-section, #contact-section {
+#list-section,
+#add-new-section,
+#contact-section {
   width: 500px;
   padding: 10px;
   margin: auto;
@@ -144,21 +156,10 @@ footer {
   padding: 10px;
   text-align: center;
   background-color: #f2f2f2;
-  border: 1px black solid ;
+  border: 1px black solid;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   max-width: 500px;
   width: 100%;
 }
-
-/* init the section hidden */
-.active-menu {
-  background-color: #555;
-  border-radius: 4px;
-}
-
-.active-menu a {
-  color: #fff;
-} 
-
