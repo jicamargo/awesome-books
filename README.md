@@ -102,7 +102,7 @@ This site allow to save in your PC information about your books (Name and author
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[View live Demo](https://github.com/jicamargo/awesome-books/)
+[View live Demo](https://jicamargo.github.io/awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
