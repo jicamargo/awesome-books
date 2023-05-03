@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+/* body {
+  height: 100px;
+  background-color: aquamarine;
+  overflow-y: scroll;
+} */
+
 /* styles for header and navbar */
 
 .header {
@@ -61,17 +67,16 @@ nav li:hover a {
 /* general styles for main section   */
 
 main {
-  margin-top: 50px; /* ajusta este valor según sea necesario */
+  margin-top: 70px; /* ajusta este valor según sea necesario */
 }
 
-
-/* styles for booklist section  */
-
-.books {
+#list-section, #add-new-section, #contact-section {
   width: 500px;
   padding: 10px;
   margin: auto;
 }
+
+/* styles for booklist section  */
 
 #booklist {
   /* padding: 16px; */
@@ -108,8 +113,7 @@ main {
 .newbookform {
   display: flex;
   flex-direction: column;
-  margin: 30px auto;
-  border-top: 2px black solid;
+  margin: 0 auto;
   width: 300px;
   text-align: center;
 }
@@ -127,16 +131,25 @@ main {
   box-shadow: 5px 5px 5px #292424;
 }
 
+/* styles for contact section */
+.contact {
+  padding: 0 30px;
+  font-size: 16px;
+}
 
 /* styles for footer section */
 
 footer {
-  width: 500px;
+  position: fixed;
   padding: 10px;
-  margin: auto;
   text-align: center;
   background-color: #f2f2f2;
   border: 1px black solid ;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  width: 100%;
 }
 
 /* init the section hidden */
@@ -148,3 +161,4 @@ footer {
 .active-menu a {
   color: #fff;
 } 
+
