@@ -2,11 +2,92 @@
   box-sizing: border-box;
 }
 
-.books {
+/* body {
+  height: 100px;
+  background-color: aquamarine;
+  overflow-y: scroll;
+} */
+
+/* styles for header and navbar */
+
+.header {
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px black solid;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date {
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: end;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+}
+
+nav li {
+  width: 80px;
+  text-align: center;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active-menu {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.active-menu a {
+  color: #fff;
+}
+
+nav li:hover {
+  background-color: #878686;
+  border-radius: 4px;
+}
+
+nav li:hover a {
+  color: #fff;
+}
+
+/* general styles for main section   */
+
+main {
+  margin-top: 70px; /* ajusta este valor según sea necesario */
+}
+
+#list-section,
+#add-new-section,
+#contact-section {
   width: 500px;
   padding: 10px;
   margin: auto;
 }
+
+/* styles for booklist section  */
 
 #booklist {
   /* padding: 16px; */
@@ -43,8 +124,7 @@
 .newbookform {
   display: flex;
   flex-direction: column;
-  margin: 30px auto;
-  border-top: 2px black solid;
+  margin: 0 auto;
   width: 300px;
   text-align: center;
 }
@@ -60,4 +140,25 @@
 
 .button {
   box-shadow: 5px 5px 5px #292424;
+}
+
+/* styles for contact section */
+.contact {
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+/* styles for footer section */
+
+footer {
+  position: fixed;
+  padding: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px black solid;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  width: 100%;
 }
