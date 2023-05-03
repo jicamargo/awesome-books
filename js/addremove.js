@@ -16,7 +16,7 @@ const booklist = {
     this.books.forEach((book, index) => {
       const div = document.createElement('div');
       bookList.appendChild(div);
-      div.classList = `bookinfo ${(index % 2 === 0) ? 'grayBackground' : 'whiteBackground'}`;
+      div.classList = "bookinfo";
 
       const title = document.createElement('div');
       title.textContent = `"${book.title}" by ${book.author}`;

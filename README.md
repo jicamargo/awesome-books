@@ -97,8 +97,6 @@ This site allow to save in your PC information about your books (Name and author
 - **Show list of books created**
 - **Preserve the information in your PC**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 

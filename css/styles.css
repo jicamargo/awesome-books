@@ -90,11 +90,14 @@ main {
 /* styles for booklist section  */
 
 #booklist {
-  /* padding: 16px; */
   margin: 16px;
   border: 1px black solid;
 }
 
+.bookinfo:nth-child(even) {
+  background-color: lightgray;
+}
+ 
 .title {
   font-weight: bold;
   text-align: center;
@@ -111,14 +114,6 @@ main {
 .removebtn {
   width: 70px;
   height: 20px;
-}
-
-.whiteBackground {
-  background-color: white;
-}
-
-.grayBackground {
-  background-color: lightgray;
 }
 
 .newbookform {
