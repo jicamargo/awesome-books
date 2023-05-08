@@ -42,4 +42,3 @@ export function initNavBar() {
   listSection.style.display = 'block';
   listMenu.classList.add('active-menu');
 }
-

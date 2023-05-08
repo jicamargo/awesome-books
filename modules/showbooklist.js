@@ -1,15 +1,15 @@
-import {saveBooks} from './savebooks.js';
+import { saveBooks } from './savebooks.js';
 
 // builds the elements and show the books list inside the parent element with id = parentElemId
 
-export function ShowBookList (parentElemId, arrBooks)  {
+export function ShowBookList(parentElemId, arrBooks) {
   const bookListElem = document.getElementById(parentElemId);
 
   bookListElem.textContent = '';
   arrBooks.forEach((book, index) => {
     const div = document.createElement('div');
     bookListElem.appendChild(div);
-    div.classList = "bookinfo";
+    div.classList = 'bookinfo';
 
     const title = document.createElement('div');
     title.textContent = `"${book.title}" by ${book.author}`;
@@ -21,7 +21,7 @@ export function ShowBookList (parentElemId, arrBooks)  {
     removeBtn.addEventListener('click', () => {
       removeBtn.parentElement.remove();
       arrBooks.splice(index, 1);
-      saveBooks(arrBooks); 
+      saveBooks(arrBooks);
     });
 
     div.appendChild(removeBtn);

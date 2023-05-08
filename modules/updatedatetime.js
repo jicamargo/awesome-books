@@ -1,11 +1,10 @@
-// update the date and time
+// update the date and time using luxon
+
+import { DateTime } from './luxon.js';
 
 function updateDateTime() {
-  const currentDateTime = new Date();
-  const dateTimeOptions = {
-    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric',
-  };
-  return currentDateTime.toLocaleDateString('en-US', dateTimeOptions)
+  const now = DateTime.now();
+  return DateTime.fromISO(now).toFormat('FF');
 }
 
-export {updateDateTime};
+export { updateDateTime };
