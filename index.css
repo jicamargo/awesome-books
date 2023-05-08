@@ -2,20 +2,23 @@
   box-sizing: border-box;
 }
 
-/* body {
-  height: 100px;
-  background-color: aquamarine;
+body {
+  border: 1px black solid;
+  border-radius: 14px;
+  padding: 16px;
+  overflow: hidden;
   overflow-y: scroll;
-} */
+  height: 97vh;
+}
 
 /* styles for header and navbar */
 
 .header {
   position: fixed;
-  top: 8px;
+  top: 32px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 500px;
+  max-width: 80vw;
   width: 100%;
 }
 
@@ -82,7 +85,7 @@ main {
 #list-section,
 #add-new-section,
 #contact-section {
-  width: 500px;
+  width: 80vw;
   padding: 10px;
   margin: auto;
 }
@@ -94,10 +97,6 @@ main {
   border: 1px black solid;
 }
 
-.bookinfo:nth-child(even) {
-  background-color: lightgray;
-}
- 
 .title {
   font-weight: bold;
   text-align: center;
@@ -109,6 +108,10 @@ main {
   justify-content: space-between;
   height: 35px;
   padding: 0 16px;
+}
+
+.bookinfo:nth-child(even) {
+  background-color: lightgray;
 }
 
 .removebtn {
@@ -151,9 +154,9 @@ footer {
   text-align: center;
   background-color: #f2f2f2;
   border: 1px black solid;
-  bottom: 0;
+  bottom: 32px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 500px;
+  max-width: 80vw;
   width: 100%;
 }
