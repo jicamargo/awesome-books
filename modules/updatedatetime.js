@@ -2,9 +2,7 @@
 
 import { DateTime } from './luxon.js';
 
-function updateDateTime() {
+export default function updateDateTime() {
   const now = DateTime.now();
   return DateTime.fromISO(now).toFormat('FF');
 }
-
-export { updateDateTime };

@@ -1,20 +1,24 @@
 // define class bookList
-import { getBooks } from './getbooks.js';
-import { saveBooks } from './savebooks.js';
-import { addBook } from './addbook.js';
-import { ShowBookList } from './showbooklist.js';
+import getBooks from './getbooks.js';
+import saveBooks from './savebooks.js';
+import addBook from './addbook.js';
+import ShowBookList from './showbooklist.js';
 
-class bookListClass {
+export default class BookListClass {
   constructor(parentElemId) {
     this.books = [];
     this.parentElemId = parentElemId;
   }
 
-  // define methods, to save and read data from local storage, and show the book list in the parent element with id = parentElemId
+  // define methods, to save and read data from local storage, show booklist in the parent element
 
-  getBooks = () => this.books = getBooks();
+  getBooks() {
+    this.books = getBooks();
+  }
 
-  saveBooks = () => saveBooks(this.books);
+  saveBooks() {
+    saveBooks(this.books);
+  }
 
   ShowBookList = () => ShowBookList(this.parentElemId, this.books);
 
@@ -28,5 +32,3 @@ class bookListClass {
     this.ShowBookList();
   }
 }
-
-export default bookListClass;

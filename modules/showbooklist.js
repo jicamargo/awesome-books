@@ -1,8 +1,8 @@
-import { saveBooks } from './savebooks.js';
+import saveBooks from './savebooks.js';
 
-// builds the elements and show the books list inside the parent element with id = parentElemId
+// builds the elements and show the books list inside the parent element
 
-export function ShowBookList(parentElemId, arrBooks) {
+export default function ShowBookList(parentElemId, arrBooks) {
   const bookListElem = document.getElementById(parentElemId);
 
   bookListElem.textContent = '';

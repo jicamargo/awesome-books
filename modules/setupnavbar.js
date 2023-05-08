@@ -36,7 +36,7 @@ contactMenu.addEventListener('click', () => {
   addNewMenu.classList.remove('active-menu');
 });
 
-export function initNavBar() {
+export default function initNavBar() {
   hideAllSections();
   listSection.style.display = 'block';
   listSection.style.display = 'block';

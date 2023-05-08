@@ -1,1 +1,3 @@
-export const getBooks = () => JSON.parse(localStorage.getItem('bookData')) || [];
+export default function getBooks() {
+  return JSON.parse(localStorage.getItem('bookData')) || [];
+}
