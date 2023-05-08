@@ -21,6 +21,11 @@ class bookListClass {
   addBook = (author, title) => {
     this.books = addBook(author, title, this.books);
     this.ShowBookList();
+  };
+
+  init = () => {
+    this.getBooks();
+    this.ShowBookList();
   }
 };
 
