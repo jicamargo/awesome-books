@@ -12,12 +12,14 @@ export default class BookListClass {
 
   // define methods, to save and read data from local storage, show booklist in the parent element
 
-  getBooks() {
+  getBooks = () => {
     this.books = getBooks();
+    return this.books;
   }
 
-  saveBooks() {
+  saveBooks = () => {
     saveBooks(this.books);
+    return this.books;
   }
 
   ShowBookList = () => ShowBookList(this.parentElemId, this.books);
